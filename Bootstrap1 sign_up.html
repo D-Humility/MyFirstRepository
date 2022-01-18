@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .affix + .container-fluid {
+            padding-top: 70px;
+        }
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info" style="height: 90px;">
+        <h1>Meshoo International Communications...</h1>
+    </div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="87">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#"><img src="Logo.JPEG" alt="Logo" width="40px" height="35px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../Bootstrap1/Bootstrap1 sign_in.html">
+                        <span class="glyphicon glyphicon-log-in"></span> Log In
+                    </a></li>
+                    <li class="active"><a href="../Bootstrap1/Bootstrap1 sign_up.html">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <form action="Bootstrap1 sign-in.html" autocomplete="on">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div class="form-group">
+                    <label for="Fname">First Name:</label>
+                    <input type="text" class="form-control" id="Fname" placeholder="Input First Name" name="First Name" required minlength="4">
+                </div>
+                <div class="form-group">
+                    <label for="Lname">Last Name:</label>
+                    <input type="text" class="form-control" id="Lname" placeholder="Input Last Name" name="Last Name" required minlength="4">
+                </div>
+                <div class="form-group">
+                    <label for="Uname">Username:</label>
+                    <input type="text" class="form-control" id="Uname" placeholder="Input Username" name="Username" required minlength="4">
+                </div>
+                <div class="form-group">
+                    <label for="Tel">Phone Number:</label>
+                    <input type="tel" class="form-control" id="Tel" placeholder="Input Phone Number" name="tel" required minlength="11" maxlength="14">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Enter Email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd" required minlength="8">
+                    <span class="help-block">Password must be more than 8 characters including; uppercase, lowercase and a digit</span>
+                </div>
+                <div class="form-group">
+                    <label for="Cpwd">Confirm Password:</label>
+                    <input type="password" class="form-control" id="Cpwd" placeholder="Confirm Password" name="Cpwd" required minlength="8">
+                    <span class="help-block">Re-enter Password: Password must be more than 8 characters including; uppercase, lowercase and a digit</span>
+                </div>
+                <div class="form-group">
+                    <label for="DoB">Date of Birth:</label>
+                    <input type="date" class="form-control" id="DoB" name="DoB" required max="2004-01-17">
+                    <br>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" checked required>Male</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" required>Female</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label><input type="radio" name="gender" disabled>Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Pspt">Upload Passport:</label>
+                    <input type="file" class="form-control" id="Pspt" name="Passport" required>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember" required> I am not a Robot</label>
+                </div>
+                    <div><button type="button" class="btn btn-warning" onclick="alert 
+                        ('All fields must be filled before submission')">
+                        Hint</button>
+                    </div><br><br>
+                    <button type="submit" class="btn btn-info">Submit</button>
+            </fieldset>
+        </form>
+    </div><br><br><br><br><br><br>
+    <footer class="container-fluid text-center">
+        <p>Copyright © meshoo-communications@gmail.com</p>
+    </footer>
+</body>
+</html>

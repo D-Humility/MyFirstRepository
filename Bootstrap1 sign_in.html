@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .affix + .container-fluid {
+            padding-top: 70px;
+        }
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info" style="height: 90px;">
+        <h1>Meshoo International Communications...</h1>
+    </div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="87">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#"><img src="Logo.JPEG" alt="Logo" width="40px" height="35px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="../Bootstrap1/Bootstrap1 sign_in.html">
+                        <span class="glyphicon glyphicon-log-in"></span> Log In
+                    </a></li>
+                    <li><a href="../Bootstrap1/Bootstrap1 sign_up.html">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <div class="container">
+        <form action="Bootstrap1 home.html" autocomplete="on">
+            <fieldset>
+                <legend>Login Info</legend>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <span class="help-block">Input a valid email address here.</span>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required minlength="8">
+                </div>
+                <span class="help-block">Password must be more than 8 characters including; uppercase, lowercase and a digit</span>
+                <button type="submit" class="btn btn-info">Submit</button>
+            </fieldset>
+        </form>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="container-fluid text-center">
+        <p>Copyright © meshoo-communications@gmail.com</p>
+    </footer>
+</body>
+</html>
