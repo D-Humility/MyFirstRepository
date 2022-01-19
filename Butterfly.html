@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meshoo's Butterfly</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.butterfly {
+            position: relative;
+            background-color: white;
+            border: 2px solid black;
+            height: 1000px;
+            width: 800px;
+            margin: 30px;
+        }
+        div.circle {
+            position: absolute;
+            top: 50px;
+            left: 255px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-color: lightgray;
+            font: 14px arial black; 
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            z-index: +3;
+        }
+        div.topwingsleft {
+            position: absolute;
+            top: 70px;
+            left: 102px;
+            border-radius: 10px 50px 0px 20px;
+            border: 2px solid black;
+            border-bottom: none;
+            z-index: +1;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            padding: 10px;
+        }
+        div.topwingsright {
+            position: absolute;
+            top: 70px;
+            left: 298px;
+            border-radius: 50px 10px 20px 0px;
+            border: 2px solid black;
+            border-bottom: none;
+            z-index: +1;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            padding: 10px;
+        }
+        div.Bbody {
+            position: absolute;
+            top: 80px;
+            left: 250px;
+            height: 180px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            border: 2px solid black;
+            text-align: center;
+            z-index: +2;
+        }
+        div.bottomwingsleft {
+            position: absolute;
+            top: 170px;
+            left: 105px;
+            border: 2px solid black;
+            border-radius: 20px 0px 50px 10px;
+            border-top: none;
+            z-index: +1;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            padding: 10px;
+        }
+        div.bottomwingsright {
+            position: absolute;
+            top: 170px;
+            left: 295px;
+            border: 2px solid black;
+            border-radius: 0px 20px 10px 50px;
+            border-top: none;
+            z-index: +1;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            padding: 10px;
+        }
+        div.antennaleft {
+            position: absolute;
+            top: 30px;
+            left: 260px;
+            border: 2px solid black;
+            height: 30px;
+            width: 3px;
+            z-index: +1;
+            transform: rotate(150deg);
+        }
+        div.antennaright {
+            position: absolute;
+            top: 30px;
+            left: 285px;
+            border: 2px solid black;
+            height: 30px;
+            width: 3px;
+            transform: rotate(30deg);
+        }
+        div.tailleft {
+            position: absolute;
+            top: 250px;
+            left: 265px;
+            border: 2px solid black;
+            height: 20px;
+            width: 3px;
+            transform: rotate(30deg);
+        }
+        div.tailright {
+            position: absolute;
+            top: 250px;
+            left: 280px;
+            border: 2px solid black;
+            height: 20px;
+            width: 3px;
+            transform: rotate(150deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="butterfly">
+        <div class="topwingsleft">
+            <div style="border: 5px solid red; background-color: yellow;
+            border-bottom: none; font-size: 400%; text-align: center; border-radius: 10px 50px 0px 20px;
+            font-family: Arial, Helvetica, sans-serif
+            ;"><b>O</b></div>
+        </div>
+        <div class="bottomwingsleft">
+            <div style="border: 5px solid red; background-color: yellow;
+            border-top: none; font-size: 400%; text-align: center; border-radius: 20px 0px 50px 10px;
+            font-family: Arial, Helvetica, sans-serif
+            ;"><b>---</b></div>
+        </div>
+        <div class="topwingsright">
+            <div style="border: 5px solid red; background-color: yellow;
+            border-bottom: none; font-size: 400%; text-align: center; border-radius: 50px 10px 20px 0px;
+            font-family: Arial, Helvetica, sans-serif
+            ;"><b>O</b></div>
+        </div>
+        <div class="bottomwingsright">
+            <div style="border: 5px solid red; background-color: yellow;
+            border-top: none; font-size: 400%; text-align: center; border-radius: 0px 20px 10px 50px;
+            font-family: Arial, Helvetica, sans-serif
+            ;"><b>---</b></div>
+           
+    </div>
+    <div class="circle">
+        <p><b>0  0</b></p>
+    </div>
+    <div class="Bbody">
+        <p>-___-</p>
+        <p>-____-</p>
+        <p>-____-</p>
+        <p>-___-</p>
+        <p>-_-</p>
+    </div>
+    <div class="antennaleft">
+        <p></p>
+    </div>
+    <div class="antennaright">
+        <p></p>
+    </div>
+    <div class="tailleft">
+        <p></p>
+    </div>
+    <div class="tailright">
+        <p></p>
+    </div>
+    </div>
+</body>
+</html>
