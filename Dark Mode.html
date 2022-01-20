@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meshoo Media</title>
+    <style>
+        body {background-color: black;}
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            padding: 15px 10px;
+            text-align: center;
+            font-family: cursive;
+            font-size: 150%;
+            background-color: darkslategray;
+            color: white;
+            position: relative;
+        }
+        .lightmode {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            background-color: white;
+            width: 100px;
+            height: 30px;
+        }
+        .lightmode a {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+        .lightmode a:hover {
+            color: blue;
+        }
+        nav ul {
+            list-style-type: none;
+            background-color: darkslateblue;
+        }
+        nav li {
+            padding: 40px;
+            display: inline;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(250,250,250,0.8);
+        }
+                
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: inline;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 40px;
+        }
+        .BgroundImage {
+            position: relative;
+            margin-left: 10%;
+            z-index: -1;
+        }
+        .Image-content {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 80px;
+            height: 80px;
+        }
+        .Name-content {
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            font-size: smaller;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .Writeup-content {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 70%;
+            font-size: x-small;
+        }
+        .footer-content {
+            position: absolute;
+            bottom: 5px;
+            width: 80%;
+            height: 20%;
+            background-color: rgb(36, 36, 197, 0.3);
+        }
+        
+        div.fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            border: 5px solid white;
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+            font-size: 300%;
+            background-color: lightgrey;
+            cursor: pointer;
+            animation: Plus 5s linear 2s infinite reverse;
+        }
+        @keyframes Plus {
+            0%   {background-color:red; right:20px; bottom:20px;}
+            25%  {background-color:yellow; right:20px; bottom:40px;}
+            50%  {background-color:blue; right:20px; bottom:60px;}
+            75%  {background-color:green; right:20px; bottom:40px;}
+            100% {background-color:red; right:20px; bottom:20px;}
+        }
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(36, 36, 197);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: darkblue;
+        }
+
+        @media only screen and (min-width: 500px) {
+            .grid-container {grid-template-columns: auto auto;}
+        }
+        @media only screen and (min-width: 800px) {
+            .grid-container {grid-template-columns: auto auto auto;}
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo.JPEG" alt="Logo" height="100px" width="100px"> Meshoo Telecommunication Network
+        <div class="lightmode" style="font-size:large;"><a href="CSS4Seth.html">Light Mode</a></div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <div class="dropdown">  
+                <img src="Menu Icon.png" alt="Menu" height="50px" width="50px">
+                    <div class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Email</a>
+                        <a href="#">Telephone</a>
+                    </div>
+                </div>
+            </li>
+            <li><img src="Home Icon.png" height="50px" width="50px" alt="home" style="cursor: pointer;"></li>
+            <li><img src="Telephone Icon.png" height="50px" width="50px" alt="Phone" style="cursor: pointer;"></li>
+        </ul>
+    </nav>
+    <div class="grid-container">
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+                
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+
+        <div class="BgroundImage">
+            <img src="sunset image.jpg" alt="background" width="80%">
+            <div class="Image-content">
+                <img src="PassportCSS.jpg" alt="Profile Picture" width="30%" height="30%" style="border-radius: 50%;">
+            </div>
+            <div class="Name-content">
+                <span><b>Okonkwo Meshach Ebuka</b></span>
+            </div>
+            <div class="Writeup-content">
+                <p>Comr. Barr. Amb. Okonkwo Meshach Ebuka is a graduate of the Federal Polytechnic Nekede</p>
+                <p><b>We Believe in "Better Days Ahead"</b></p>
+            </div>
+            <div class="footer-content">
+                <div><img src="thumbs-up.png" alt="Like"
+                    style="width: 6%; height: 6%; border: 2px solid black; margin: 2%;"><b>Like</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <span><b>+</b></span>
+    </div>        
+</body>
+</html>
